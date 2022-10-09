@@ -313,15 +313,6 @@
     
         <li>
             <div class="trm-label">
-                Profession:
-            </div>
-            <div class="trm-label trm-label-light">
-                student
-            </div>
-        </li>
-    
-        <li>
-            <div class="trm-label">
                 age:
             </div>
             <div class="trm-label trm-label-light">
@@ -331,10 +322,19 @@
     
         <li>
             <div class="trm-label">
-                Age:
+                Profession:
             </div>
             <div class="trm-label trm-label-light">
-                18
+                student
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                city:
+            </div>
+            <div class="trm-label trm-label-light">
+                GuangDong
             </div>
         </li>
     
@@ -344,7 +344,7 @@
 <div class="trm-divider trm-mb-40 trm-mt-40"></div>
 <!-- action button -->
 <div class="text-center">
-    <a href="mailto:3273808367@qq.com" class="trm-btn">
+    <a href="mailto:zhituaner@outlook.com" class="trm-btn">
         联系我
         <i class="far fa-envelope"></i>
     </a>
@@ -449,6 +449,12 @@
     
 
     
+        <div class="trm-footer-item">
+            <span>© 2022- 2022</span>
+            <span class="footer-separator">·</span>
+            <span class="trm-accent-color">Cxpller</span>
+        </div>
+    
 
     
         <div class="trm-footer-item">
@@ -464,10 +470,26 @@
         </div>
       
 
+    
+        <div class="trm-footer-item">
+            博客已萌萌哒运行 <span id="since" class="trm-accent-color"></span> 天
+        </div>
      
 
      
 </footer>
+
+<script>
+    function show_date_time () {
+        BirthDay = new Date("10/08/2022 12:02:00");
+        today = new Date();
+        timeold = (today.getTime() - BirthDay.getTime());
+        msPerDay = 24 * 60 * 60 * 1000
+        day = Math.floor(timeold / msPerDay)
+        since.innerHTML = day
+    }
+    show_date_time()
+</script>
  
                     <!-- footer end -->
 
