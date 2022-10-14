@@ -27,10 +27,10 @@
 
 <!-- Favicon -->
 
-    <link href='/img/Logo16.png?v=v1.1.10' rel='icon' type='image/png' sizes='16x16' ></link>
+    <link href='/img/Logo16.png?v=v1.2.2' rel='icon' type='image/png' sizes='16x16' ></link>
 
 
-    <link href='/img/Logo32.png?v=v1.1.10' rel='icon' type='image/png' sizes='32x32' ></link>
+    <link href='/img/Logo32.png?v=v1.2.2' rel='icon' type='image/png' sizes='32x32' ></link>
 
 
 
@@ -65,20 +65,16 @@
 
 
 <!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"cxpller.github.io","author":"Cxpller","root":"/","typed_text":["Web Developer","| 纸团儿","'s Blog"],"favicon":{"logo":"/img/Logo32.png","icon16":"/img/Logo16.png","icon32":"/img/Logo32.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"v1.1.10","theme":{"switch":true,"default":"style-dark"},"search":{"enable":false,"type":"engine","href":"https://www.google.com/search?q=site:","domain":null},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":false,"clipboard":false},"swup":false};</script>
+<script>window.ASYNC_CONFIG = {"hostname":"cxpller.github.io","author":"Cxpller","root":"/","typed_text":["Web Developer","| 纸团儿","'s Blog"],"favicon":{"logo":"/img/Logo32.png","icon16":"/img/Logo16.png","icon32":"/img/Logo32.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"v1.2.2","theme":{"switch":true,"default":"style-dark"},"search":{"enable":false,"type":"engine","href":"https://www.google.com/search?q=site:","domain":null},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":false,"clipboard":false},"swup":false};</script>
 
 <!-- Theme mode css -->
-
-    <link data-swup-theme="style-light" rel="stylesheet" href="/css/style-light.css?v=v1.1.10" id="trm-switch-style">
-    <link data-swup-theme="style-dark" rel="stylesheet" href="/css/style-dark.css?v=v1.1.10" id="trm-switch-style">
-    <script>
-        let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
-        let catchMode = localStorage.getItem('theme-mode') || defaultMode;
-        let themeMode = catchMode === 'style-dark' ? 'style-light' : 'style-dark';
-        let linkdom = document.querySelector('[data-swup-theme='+themeMode+']');
-        if(linkdom) linkdom.remove();
-    </script>
-
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=v1.2.2" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
 
 <!-- CDN -->
 
@@ -226,7 +222,7 @@
     <div class="trm-banner" data-scroll data-scroll-direction="vertical">
     
     <!-- banner cover -->
-    <img src="https://drive.cn.kongwu.top/d/Cxpller_drive/Blog/banner/banner3.png" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
+    <img style="object-position:top;object-fit:cover;" src="https://drive.cn.kongwu.top/d/Cxpller_drive/Blog/banner/banner3.png" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
     <!-- banner cover end -->
     
 
@@ -292,7 +288,7 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="far fa-clock trm-icon"></i><br>
-            02:55
+            14:55
         </div>
     </div>
     <div class="col-sm-4">
@@ -343,7 +339,7 @@
 <div class="row">
     <div class="col-lg-12">
         <!-- title -->
-        <h5 class="trm-mb-40 trm-title-with-divider">
+        <h5 class="trm-title-with-divider">
             其他文章
             <span data-number="02"></span>
         </h5>
@@ -369,7 +365,7 @@
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
                 <li>22/10/09</li>
-                <li>02:29</li>
+                <li>14:29</li>
                 
                 
             </ul>
@@ -379,8 +375,11 @@
     
 </div>
 
+    
 
-                    <div class="trm-divider trm-mb-40"></div>
+
+
+                    <div class="trm-divider footer-divider"></div>
 
                     <!-- footer -->
                     <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
@@ -404,7 +403,7 @@
             <span> 
                 主题 - 
                 <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
-                vv1.1.10
+                vv1.2.2
             </span>
         </div>
       
@@ -467,11 +466,19 @@
     
 
     
-        <script src="/js/plugins/typing.js?v=v1.1.10"></script>
+        <script src="/js/plugins/typing.js?v=v1.2.2"></script>
     
 
     
 
+    <!-- 数学公式 -->
+    
+
+
+    <!-- 评论插件 -->
+    
+        
+        
     
 
 
@@ -497,7 +504,7 @@
     
 
 
-<script id="async-script" src="/js/main.js?v=v1.1.10"></script>
+<script id="async-script" src="/js/main.js?v=v1.2.2"></script>
 
 </body>
 
