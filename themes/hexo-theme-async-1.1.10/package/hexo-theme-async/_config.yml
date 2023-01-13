@@ -1,0 +1,244 @@
+# user info
+user:
+  name: ThemeAsync
+  first_name: Theme
+  last_name: Async
+  email: 
+  domain: 站点域名
+  avatar: /img/avatar.jpg
+  describe: 网站简介。
+  ruleText: 暂不接受个人博客以外的友链申请，确保您的网站内容积极向上，文章至少30篇，原创70%以上，部署HTTPS。
+
+# logo
+favicon:
+  logo: /img/favicon.svg
+  icon16: /img/favicon.svg
+  icon32: /img/favicon.svg
+  appleTouchIcon: 
+  webmanifest:
+  visibilitychange: false
+  hidden: /failure.ico # Displays an icon when not visible
+  showText: favicon.showText
+  hideText: favicon.hideText
+
+# Theme resource files or plug-ins
+assets:
+  plugin:
+    row:
+      css: css/plugins/bootstrap.row.css
+    swup:
+      js: //cdn.jsdelivr.net/npm/swup@2.0.19/dist/swup.min.js
+    locomotive_scroll:
+      css: //cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+      js: //cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+    fancybox: 
+      css: //cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
+      js: //cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
+    typing:
+      js: js/plugins/typing.js
+    search:
+      js: [//cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js, js/plugins/local_search.js]
+    swiper: 
+      css: //cdn.jsdelivr.net/npm/swiper@4.5.1/dist/css/swiper.min.css
+      js: //cdn.jsdelivr.net/npm/swiper@4.5.1/dist/js/swiper.min.js
+    katex:
+      js: //cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
+      css: //cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+      auto_render: //cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+      copy_tex:
+        css: //cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css
+        js: //cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  icons: 
+    type: font # font symbol
+    css:  css/plugins/font-awesome.min.css
+    js:
+
+# cdn
+cdn:
+  css: 
+  js:
+    head:
+    base: 
+    async: 
+    defer: 
+
+# The icon used by the theme
+icons:
+  sun: far fa-sun
+  moon: far fa-moon
+  play: fas fa-play
+  email: far fa-envelope
+  next: fas fa-arrow-right
+  calendar: far fa-calendar-alt
+  clock: far fa-clock
+  user: far fa-user
+  back_top: fas fa-arrow-up
+  close: fas fa-times
+  search: fas fa-search
+  reward: fas fa-hand-holding-usd
+
+# Top navigation menu
+top_bars:
+  - title: menu.home
+    url: /
+  - title: menu.archives
+    url: /archives/
+
+# Banner settings
+banner:
+  default:
+    type: img
+    bgurl: /img/banner.png
+    bannerText: Hi my new friend!
+  index:
+    type: img
+    bannerTitle: 树深时见鹿，<br>溪午不闻钟。
+    bannerText: Hi my new friend!
+    videoUrl: 
+  archive:
+    bannerTitle: 云间连下榻，<br>天上接行杯。
+    bannerText: The article archive
+  links:
+    bannerTitle: 莫愁前路无知己，<br>天下谁人不识君。
+    bannerText: A link to a friend's website
+  comment:
+    bannerTitle: 醉后不知天在水，<br>满船清梦压星河。
+    bannerText: The magic tree hole
+  about:
+    bannerTitle: 醉后不知天在水，<br>满船清梦压星河。
+    bannerText: About me
+
+# Sidebar settings
+sidebar:
+  typedTextPrefix: I`m
+  typedText: [ 'Web Developer' ]
+  info: 
+    - key: sidebar.residence
+      val: Mars
+    - key: sidebar.city
+      val: WuHan
+    - key: sidebar.age
+      val: 18
+  social:
+    - name: Github
+      icon: fab fa-github
+      url: https://github.com
+    - name: Twitter
+      icon: fab fa-twitter
+      url: https://twitter.com
+
+# About page settings
+about:
+  title: 如果一切都是镜花水月，那就让这万物走向终结。如果一切皆是命中注定，那就让这世界消失殆尽。
+  introduction: 大家好，我是 <strong>Async</strong>，很高兴您能在浩瀚如烟的互联网世界里发现这个博客，更感谢您能够饶有兴致地浏览这个页面。建立这个 Blog 是出于兴趣爱好，我将在此分会分享一些学习笔记，可能还会分享少许图片、视频以及其他有趣东西的链接。
+  blog: 
+    <ul class="trm-list">
+      <li>程序：Hexo </li>
+      <li>主题：Hexo-theme-async </li>
+    </ul>
+  privacy: 
+    本网站不会追踪访客行为，且不要求访客提供任何敏感信息（比如真实姓名、身份证号码、手机号等），因而也不存在任何隐私泄漏问题。访客参与评论，必须遵守法律法规和基本道德规范，文明礼貌。严禁发布任何有关淫秽、反动、暴力、博彩、恐吓、低俗的内容或违法信息，在尊重言论自由的同时请保持和平与理性。请勿对他人采取不友好的评论或其它过激行为。
+
+# Footer settings
+footer:
+  # Hexo link (Powered by Hexo).
+  powered:
+    enable: true
+  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+  # https://beian.miit.gov.cn/
+  beian:
+    enable: false
+    icp: 
+  # Copyright date
+  copyrightYear:
+  # 
+  live_time:
+    enable: false
+    prefix: footer.tips
+    start_time: 04/10/2022 17:00:00
+  #
+  custom_text:
+
+# archive
+archive:
+  type: more # less more
+
+# Creative Commons 4.0 International License.
+# https://creativecommons.org/licenses/
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license.
+# CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
+# Valid values of language: deed.zh, deed.en, deed.ja, etc.
+creative_commons:
+  license: by-nc-sa
+  language: deed.zh
+  post: false
+  clipboard: false
+
+# Reward (Donate)
+# If enable true, reward would be displayed in every posts and pages by default.
+# You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
+reward:
+  enable: false
+  comment: reward.comment
+  # url:
+  methods:
+
+# img loading="lazy"
+lazyload:
+  enable: true
+
+# Page Visit Statistics
+webAnalytics:  
+  enable: false 
+  baidu:   # Baidu key
+  google:  # Tracking ID for Google statistics
+  tencent: # Tencent statistics
+    sid:
+    cid:
+
+# comment
+comment:
+  enable: false
+  bComments:
+    v: 0.0.12
+    env: 
+
+# Theme mode 
+theme: 
+  switch: true 
+  default: style-light # style-light style-dark
+
+# Service Worker
+sw: false
+
+# Post wordcount
+# https://github.com/willin/hexo-wordcount
+wordcount:
+  enable: false
+  count: true
+  time: true
+
+# That is it only render those page which has `katex: true` in Front-matter.
+# math fomula
+# https://katex.org/
+katex:
+  copy_tex: true
+  global: false
+  # Options are for katex rendering options: https://katex.org/docs/options.html
+  # In page katex options are also possible and will be merged
+  options: {}
+
+# Blog search
+search:
+  enable: false
+  type: engine #local engine
+  href: 'https://www.google.com/search?q=site:'
+  # href: "https://www.baidu.com/s?wd=site:"
+  # href: "https://www.bing.com/search?q=site:"
+  domain: 
+
+# Think of swup as being pjax on steroids. The concepts are similar to those used in barba.js or other transition libraries.
+# https://swup.js.org/
+# Whether swup is enabled
+swup: false

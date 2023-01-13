@@ -1,0 +1,222 @@
+[
+    {
+        "large_version": "v1.1.x",
+        "children": [
+            {
+                "version": "1.1.8",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "增加百度自动推送"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "增加文章版权信息"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "分类页可选择只显示标题"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "主题可根据系统选择加载样式"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "Pjax 下支持动态加载脚本插件"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "修复单闭合 img 懒加载替换错误"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "修复 lang 属性取值错误"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "修复移动端 theme-color 取值异常"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "修复初次安装无配置时兼容处理"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.7",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "文章支持显示打赏功能"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "文章图片支持懒加载"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "优化 footer 区域显示和配置（不兼容，详情见：<a href='#/guide/config.html#页脚-footer'>页脚-footer</a>）"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "优化 about 配置可省略"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "开启 sw 时，内置插件更新异常"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.6",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "增加本地搜索功能"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "页面切换时主题按钮状态丢失"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "窗体大小变化时，滚动插件未刷新 （详情见：<a href='https://github.com/MaLuns/hexo-theme-async/issues/9' target='_blank' rel='noreferrer'>issues</a>）"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.4",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "支持文章详情页单栏预览（展示空间更大）"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "添加项目列表模板"
+                    },
+                    {
+                        "type": "style",
+                        "text": "增强文章详情中链接显示"
+                    },
+                    {
+                        "type": "refactor",
+                        "text": "拆分友链信息配置(详情见 页面配置-友链 文档吧🤣)"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.3",
+                "logs": [
+                    {
+                        "type": "fix",
+                        "text": "修复动态增加 dom, 滚动插件渲染异常"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "返回顶部"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.2",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "增加 toc"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "增加文章详情页自定义 banner"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.1",
+                "logs": [
+                    {
+                        "type": "fix",
+                        "text": "友链渲染异常"
+                    },
+                    {
+                        "type": "style",
+                        "text": "优化文章详情页面"
+                    }
+                ]
+            },
+            {
+                "version": "1.1.0",
+                "logs": [
+                    {
+                        "type": "docs",
+                        "text": "增加使用文档（没错就是俺）"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "增加 404 模板"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "添加自定义样式支持"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "添加个性化语言支持"
+                    },
+                    {
+                        "type": "feat",
+                        "text": "添加对 KaTex 支持"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "剥离对 Jquery 依赖"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "三方插件依赖调整为动态加载，并切换为 CDN 加载"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "文章封面图字段变更"
+                    },
+                    {
+                        "type": "perf",
+                        "text": "移除内置置顶脚本，使用 hexo-generator-index"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "修复无需要主题切换时，初始化异常"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "large_version": "v1.0.x",
+        "children": [
+            {
+                "version": "1.0.11",
+                "logs": [
+                    {
+                        "type": "feat",
+                        "text": "允许设置默认主题"
+                    },
+                    {
+                        "type": "fix",
+                        "text": "友链配置为空渲染异常"
+                    }
+                ]
+            },
+            {
+                "version": "1.0.10",
+                "logs": [
+                    {
+                        "type": "fix",
+                        "text": "修复 动态区域加载异常，暗黑模式刷新丢失"
+                    }
+                ]
+            }
+        ]
+    }
+]

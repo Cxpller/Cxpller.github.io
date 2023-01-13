@@ -1,0 +1,99 @@
+.fancybox-slide--video .fancybox__content {
+    max-width : 80% !important;
+    max-height: 80% !important
+}
+
+.fancybox__close-small {
+    margin: 0 !important
+}
+
+.fancybox__thumbs {
+    background-color: @theme-bg-color;
+    border-radius   : 0 0 10px 10px;
+    width           : calc(100% - 20px);
+    left            : 10px;
+    bottom          : 10px;
+}
+
+.fancybox__thumbs .fancybox-thumbs__list {
+    background-color: @theme-bg-color
+}
+
+.fancybox__thumbs-active:before {
+    border: solid 3px @primary  !important
+}
+
+.fancybox__bg {
+    background-color: @body-bg-color
+}
+
+.fancybox__button {
+    margin-top      : 40px;
+    background-color: transparent;
+    color           : @theme-bg-color;
+}
+
+.carousel__button.is-close {
+    color  : @theme-bg-color;
+    padding: 10px !important;
+    right  : 0 !important;
+    top    : 0 !important;
+
+    svg {
+        filter: none;
+        color : @theme-color
+    }
+}
+
+.fancybox__image {
+    transform: translateY(40px)
+}
+
+.fancybox__toolbar {
+    border-radius  : 10px 10px 0 0;
+    width          : calc(100% - 20px);
+    left           : 10px;
+    top            : 10px;
+    height         : 80px;
+    background     : @theme-bg-color;
+    display        : flex;
+    justify-content: flex-end;
+    align-items    : center;
+    padding        : 0 40px;
+    text-shadow    : none;
+}
+
+.fancybox__counter {
+    color: @theme-color;
+}
+
+.fancybox__toolbar .carousel__button {
+    margin-top: 0;
+    color     : @theme-color;
+
+    svg {
+        filter: none;
+        color : @theme-color
+    }
+}
+
+.fancybox__infobar {
+    mix-blend-mode: none;
+    left          : 40px;
+    top           : 28px;
+    z-index       : 99999;
+    opacity       : 1
+}
+
+@media(max-width:992px) {
+
+    .fancybox__toolbar,
+    .fancybox__thumbs {
+        border-radius: 0;
+        padding      : 0 20px
+    }
+
+    .fancybox__infobar {
+        left: 20px
+    }
+}

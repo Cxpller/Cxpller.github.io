@@ -1,0 +1,68 @@
+site:
+  title: 本站信息
+  webmaster: 网站名称
+  domain: 网站链接
+  avatar: 网站头像
+  describe: 网站简介
+  ruleText: 友链要求
+
+sidebar:
+  residence: Residence
+  city: City
+  age: Age
+  contact: 联系我
+
+footer:
+  powered: '由 %s 驱动'
+  theme: 主题
+  tips: '博客已萌萌哒运行 %s 天'
+  day: 天
+  hour: 时
+  minute: 分
+  seconds: 秒
+
+title:
+  links: 友情链接
+  new_publish: 最近发布
+  comment: 留言板
+  author: 作者
+  blog: 博客
+  privacy: 隐私权及评论
+  more: 查看分类
+  all_archives: 所有归档
+  other_articles: 其他文章
+  unclassified: 未分类
+
+menu:
+  home: 首页
+  archives: 归档
+  links: 友链
+  about: 关于
+
+favicon:
+  showText: (/≧▽≦/)咦！又好了！
+  hideText: (●—●)喔哟，崩溃啦！
+
+search:
+  placeholder: 搜索...
+  empty: '找不到您查询的内容: ${query}'
+  hits: '找到 ${hits} 条结果'
+  hits_time: '找到 ${hits} 条结果（用时 ${time} 毫秒）'
+
+reward:
+  comment: 我很可爱，请给我钱
+
+post:
+  more: 更多
+  copyright:
+    author: 本文作者
+    link: 本文链接
+    license_title: 版权声明
+    license_content: '本博客所有文章除特别声明外，均默认采用 %s 许可协议。'
+
+symbol:
+  comma: ，
+  period: 。
+  colon: ：
+
+ieTips: 为了更好的体验,请使用非IE浏览器

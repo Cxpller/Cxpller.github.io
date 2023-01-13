@@ -1,0 +1,8 @@
+<%- partial('./_partial/main',  {
+    banner: partial('./_partial/banner',  {
+        ...theme.banner.default,
+        bannerTitle: page.title,
+        ...theme.banner.archive 
+    }),
+    content: partial('./_partial/page/archive')
+}) %>

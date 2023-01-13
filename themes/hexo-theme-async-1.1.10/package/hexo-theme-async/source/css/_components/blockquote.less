@@ -1,0 +1,38 @@
+blockquote {
+    box-shadow      : @box-shadow;
+    padding         : 0;
+    margin          : 0;
+    display         : block;
+    position        : relative;
+    background-color: @theme-bg-color;
+    color           : @theme-color;
+    padding         : @card-padding;
+    border-radius   : @card-border-radius;
+    font-style      : italic;
+    font-size       : 16px;
+    font-weight     : 500;
+
+    &:before {
+        margin     : 0;
+        color      : @primary;
+        width      : 50px;
+        line-height: 55px;
+        content    : '"';
+        position   : absolute;
+        top        : 10px;
+        left       : 10px;
+        font-size  : 54px;
+    }
+
+    &:after {
+        margin     : 0;
+        width      : 50px;
+        color      : @primary;
+        line-height: 55px;
+        content    : '"';
+        position   : absolute;
+        bottom     : -20px;
+        right      : 2px;
+        font-size  : 54px;
+    }
+}

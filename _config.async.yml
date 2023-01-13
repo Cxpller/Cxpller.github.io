@@ -1,0 +1,138 @@
+theme:
+  switch: true
+  default: style-dark # style-light style-dark
+
+# LogoIcon跟进入离开窗口文字设置
+favicon:
+  logo: https://drive.kongwu.top/d/Cxpller_drive/Blog/logo/logo32.png
+  icon16: https://drive.kongwu.top/d/Cxpller_drive/Blog/logo/logo16.png
+  icon32: https://drive.kongwu.top/d/Cxpller_drive/Blog/logo/logo32.png
+  visibilitychange: true
+
+# 顶部菜单
+top_bars:
+  - title: Home
+    url: /
+  - title: Archives
+    url: /archives/
+    children:
+      - title: categories
+        url: /categories/学习类/
+  - title: Links
+    url: /links/
+  - title: About
+    url: /about/
+
+# 用户信息
+user:
+  name: Cxpller
+  first_name: Tuan
+  last_name: Zhi
+  email: zhituaner@outlook.com
+  domain: https://cxpller.github.io/
+  avatar: https://drive.kongwu.top/d/Cxpller_drive/Blog/avatar.webp
+  describe: 大家好吖，这里是纸团儿，感谢从浩瀚如海的互联网中发现这个博客。此博客制作原因是兴趣盎然，往后可能会在此更新一些文案或有用的东西。<br>———路过的人都有他自己的故事
+  ruleText: 存放的都是朋友们的个人博客呀，欢迎联系我进入友链。
+
+# 侧边栏信息
+sidebar:
+  typedTextPrefix: Cxpller
+  typedText: ["| 纸团儿", "'s Blog"]
+  social:
+    - icon: fab fa-github
+      url: https://github.com/Cxpller
+      name: Github
+    # - icon: fab fa-steam-symbol
+    #   url: https://steamcommunity.com/profiles/76561198332195318/
+    #   name: Steam
+    - icon: fab fa-discord
+      url: https://discord.com/channels/Cxpller#6244
+      name: Discord
+    - icon: fas fa-gamepad
+      url: https://vrchat.com/home/user/usr_2a6ec6b8-9150-46cc-a30c-79963b6c54f1
+      name: VRchat
+  info: # 个人信息
+    - key: age
+      val: 17
+    - key: Profession
+      val: student
+    - key: city
+      val: GuangDong
+
+# banner设置
+banner:
+  default:
+    type: img
+    bgurl: https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/index.png
+    bannerTitle: 纸团儿的博客
+    bannerText: Hi! Here is Cxpller_Blog(●'◡'●)
+    position: 50% 30%
+  index:
+    type: slideshow
+    bgurl:
+      [
+        https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/index.png,
+        https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner1.png,
+        https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner2.png,
+        https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner3.png,
+      ]
+    bannerTitle: 纸团儿的博客
+    bannerText: Hi! Here is Cxpller_Blog(●'◡'●)
+  archive:
+    type: img
+    bgurl: https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner1.png
+    bannerTitle: 归档
+    bannerText: Archive
+  categories:
+    type: img
+    bgurl: https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner2.png
+    bannerTitle: 分类
+    bannerText: Categories
+  links:
+    type: img
+    bgurl: https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner3.png
+    bannerTitle: 友链
+    bannerText: Links
+  about:
+    type: img
+    bgurl: https://drive.kongwu.top/d/Cxpller_drive/Blog/banner/banner4.png
+    bannerTitle: 关于
+    bannerText: About
+
+# 页脚Footer
+footer:
+  copyrightYear: 2022
+  live_time:
+    enable: true
+    prefix: footer.tips
+    start_time: 10/08/2022 12:02:00
+
+# 友链
+links:
+  - name: Hexo
+    url: https://hexo.io/zh-cn/
+    image: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+    desc: 快速、简洁且高效的博客框架
+  - name: 白云苍狗 | 主题作者
+    url: https://www.imalun.com/
+    image: https://www.imalun.com/images/avatar.jpg
+    desc: 醒，亦在人间；梦，亦在人间
+  - name: 空无 | Kongwu
+    url: https://blog.kongwu.top/
+    image: https://blog.kongwu.top/images/avatar.webp
+    desc: 空空的，什么都没有
+  - name: 空无 | 资源小站
+    url: https://drive.kongwu.top/
+    image: https://blog.kongwu.top/images/avatar.webp
+    desc: 小空空的资源站
+  - name: 思恋 | 主页
+    url: https://miss.kongwu.tk
+    image: https://miss.kongwu.tk/img/tou.jpg
+    desc: Miss
+
+# 关于
+about:
+  title: Cxpller's Blog
+  introduction: 这里是纸团儿！(或者Cxpller) , 是一名学生捏
+  blog: 框架:Hexo<br>主题:Hexo-theme-async<br>托管:Github<br>图床:drive.kongwu.top
+  privacy: 本网站不会追踪访客行为，且不要求访客提供任何敏感信息（比如真实姓名、身份证号码、手机号等），因而也不存在任何隐私泄漏问题。访客参与评论，必须遵守法律法规和基本道德规范，文明礼貌。严禁发布任何有关淫秽、反动、暴力、博彩、恐吓、低俗的内容或违法信息，在尊重言论自由的同时请保持和平与理性。请勿对他人采取不友好的评论或其它过激行为。<br>本博客采用 知识产权署名-非商业性使用 4.0 国际许可协议 进行许可。转载前请联系作者获得许可，并注明原文链接。如有侵权，请留言告知，我会一周内删除。谢谢！

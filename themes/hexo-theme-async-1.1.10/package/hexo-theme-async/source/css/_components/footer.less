@@ -1,0 +1,31 @@
+footer {
+    background-color: @theme-bg-color;
+    box-shadow      : @box-shadow;
+    border-radius   : @card-border-radius;
+    text-align      : center;
+    width           : 100%;
+    padding         : 20px;
+
+    .trm-footer-item {
+        color          : @body-color;
+        height         : 1.6rem;
+        font-size      : .9rem;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        a {
+            color: @primary;
+            .transition-mixin();
+
+            &:hover {
+                color: @primary-weak;
+            }
+        }
+    }
+
+    .footer-separator,
+    #since {
+        margin: 0 .5rem;
+    }
+}

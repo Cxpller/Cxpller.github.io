@@ -1,0 +1,20 @@
+<div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card" data-scroll data-scroll-repeat data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="60"> 
+    <% if(is_post() && (theme.is_toc && page.toc !== false)){ %>
+        <div class="trm-tabs" id="sidebar-tabs">
+           <div class="trm-tabs-nav trm-mb-40" id="trm-tabs-nav">
+                <div data-to="tabs-user" class="trm-tabs-nav-item"><i class="fas fa-user-alt"></i></div>
+                <div data-to="tabs-toc" class="trm-tabs-nav-item active"><i class="fas fa-th-list"></i></div>
+           </div>
+            <div name="tabs-user" class="trm-tabs-item">
+                <%- partial('./user') %>
+            </div>
+            <div name="tabs-toc" class="trm-tabs-item active">
+                <%- partial('./toc') %>
+            </div>
+        </div>
+    <% } else { %>
+        <%- partial('./user') %>
+    <% } %>
+    </div>
+</div>

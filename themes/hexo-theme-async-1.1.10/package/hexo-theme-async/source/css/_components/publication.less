@@ -1,0 +1,229 @@
+.trm-publication {
+
+    >p:first-of-type {
+        color  : @theme-color  !important;
+        opacity: 1 !important;
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        +p {
+            margin-top: -14px;
+        }
+    }
+
+    blockquote {
+        background-color: @theme-bg2-color;
+        box-shadow      : @box-shadow2;
+        margin-bottom   : 1rem;
+
+        &::before {
+            color: @primary
+        }
+
+        &::after {
+            color: @primary
+        }
+    }
+
+    img {
+        display      : block;
+        max-width    : 100%;
+        border-radius: 8px;
+        margin       : .5rem auto;
+
+        +em {
+            display   : block;
+            font-size : .9rem;
+            font-style: normal;
+            text-align: center
+        }
+
+        &.emoji {
+            display       : inline-block;
+            left          : 0;
+            transform     : none;
+            width         : 1rem;
+            height        : 1rem;
+            vertical-align: text-top;
+            padding       : 0;
+            margin        : 0
+        }
+    }
+
+    ul {
+        padding      : 0;
+        margin-left  : 10px;
+        margin-bottom: 20px;
+
+        li {
+            position       : relative;
+            list-style-type: none;
+            padding-left   : 20px;
+
+            &:before {
+                content      : '';
+                position     : absolute;
+                top          : 6px;
+                left         : 0;
+                height       : 10px;
+                width        : 10px;
+                border       : solid 3px @primary;
+                border-radius: 50%
+            }
+
+            +li {
+                margin-top: 10px;
+            }
+        }
+
+        li:has(>input) {
+            padding-left: 0px;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-top   : 2rem;
+        margin-bottom: 1rem;
+        font-weight  : bold;
+        font-size    : initial;
+
+        a {
+            display: none;
+        }
+    }
+
+    h4:before,
+    h5:before,
+    h6:before {
+        display: inline-block;
+        width  : 1em;
+        content: '#';
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size     : 1.7em;
+        position      : relative;
+        padding-bottom: 10px;
+
+        &::before {
+            content      : '';
+            width        : 100%;
+            padding      : 0px 20px;
+            border-bottom: 1px solid @theme-bg2-color;
+            position     : absolute;
+            bottom       : -1px;
+            left         : -20px;
+            box-sizing   : unset;
+        }
+
+        &::after {
+            .transition-mixin();
+            content         : '';
+            position        : absolute;
+            background-color: @primary;
+            width           : 1em;
+            height          : 5px;
+            bottom          : -3px;
+            left            : 0;
+            border-radius   : 10px;
+        }
+
+        &:hover::after {
+            width: 2em;
+        }
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.15em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 0.9em;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing : 0;
+
+        tr {
+            border: 0;
+
+            th,
+            td {
+                font-size: 16px;
+                border   : 1px solid #ccc;
+                padding  : 5px 10px;
+            }
+        }
+    }
+
+    details {
+        summary {
+            background-color: @body-bg-color;
+            color           : @body-color ;
+            padding         : 10px 20px;
+            margin-bottom   : 10px;
+        }
+    }
+
+    a {
+
+        background     : linear-gradient(fade(@primary, 50%), fade(@primary-weak, 50%)) bottom no-repeat;
+        background-size: 100% .4em;
+        .transition-mixin();
+
+        &:hover {
+            background-size: 100% 60%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .trm-publication {
+        transform: translateY(-40px);
+    }
+}
+
+.trm-post-copyright {
+    list-style      : none;
+    font-size       : 0.9rem;
+    margin-top      : 2rem;
+    padding         : 0.5rem 1rem;
+    border-left     : 4px solid @primary;
+    background-color: fade(@body-color, 5%);
+    list-style      : none;
+    word-break      : break-all;
+    position        : relative;
+    overflow        : hidden;
+    line-height     : 2;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: @primary;
+    }
+}

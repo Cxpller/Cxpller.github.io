@@ -1,0 +1,56 @@
+# logo
+favicon:
+  visibilitychange: true
+
+top_bars:
+  - title: menu.home
+    url: /
+  - title: menu.archives
+    url: /archives/
+  - title: menu.links
+    url: /links/
+  - title: menu.about
+    url: /about/
+
+
+sidebar:
+  typedTextPrefix: I`m
+  typedText: [ 'Web Developer' ]
+  social:
+    - icon: fab fa-github
+      url: https://github.com/MaLuns/Hexo-theme-async
+      name: Github
+    - icon: fab fa-npm
+      url: https://www.npmjs.com/package/hexo-theme-async
+      name: Npm
+
+is_toc: true
+
+footer:
+  powered:
+    enable: true
+  beian:
+    enable: false
+    icp: 
+  copyrightYear: 2022
+  live_time:
+    enable: true
+    prefix: footer.tips
+    start_time: 04/10/2022 17:00:00
+  custom_text:
+
+search:
+  enable: true
+  type: local
+  preload: true
+  trigger: auto
+
+baidu_push: true
+
+reward:
+  enable: true
+  methods:
+    - name: 微信
+      path: https://img.lkxin.cn/tu/2022/09/22/632c11ab2f727.png
+    - name: 支付宝
+      path: https://img.lkxin.cn/tu/2022/09/22/632c11ab08ffc.jpg
